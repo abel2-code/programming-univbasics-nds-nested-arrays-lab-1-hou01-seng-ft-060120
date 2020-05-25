@@ -43,9 +43,9 @@ end
 
 def matrix_update(matrix, row, column, new_value)
   if matrix == assembled_matrix
-    assembled_matrix[row][column][] = new_value
+    assembled_matrix[row][column] = new_value
   else
-    sorted_matrix[row][column][] = new_value
+    sorted_matrix[row][column] = new_value
   end
   matrix[row][column][new_value]
   # Given any matrix (array of arrays), a row index and a column index,
