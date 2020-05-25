@@ -42,6 +42,12 @@ def matrix_lookup(matrix, row, column)
 end
 
 def matrix_update(matrix, row, column, new_value)
+  if matrix == assembled_matrix
+    assembled_matrix[row][column][new_value]
+  else
+    sorted_matrix[row][column][new_value]
+  end
+  matrix[row][column][new_value]
   # Given any matrix (array of arrays), a row index and a column index,
   # Update the matrix location at that row and column to have the value of new_value
   # Return the updated matrix
