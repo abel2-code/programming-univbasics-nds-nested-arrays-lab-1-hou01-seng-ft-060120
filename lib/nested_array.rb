@@ -31,7 +31,7 @@ def sorted_matrix
 end
 
 def matrix_lookup(matrix, row, column)
-  if matrix = assembled_matrix
+  if matrix == assembled_matrix
     assembled_matrix[row][column]
   else
     sorted_matrix[row][column]
